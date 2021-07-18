@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 - 🔭 I’m currently working on Multi-input models for asset price direction prediction.
-- 🔭 Incoming Financial Modeler to PwC
+- 🔭 Financial Modeling Analytics @ PwC
 - 🔭 Data and Fintech Tutor
 - 🌱 Focused Learning on Deep Learning applications in financial realm
 - 📫 http://firobeid.pythonanywhere.com/
