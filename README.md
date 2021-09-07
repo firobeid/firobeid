@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-- 🔭 I’m currently tuning my Character Level Language for transfer learning to classification tasks
+- 🔭 I’m currently tuning my Character Level Language model for transfer learning to classification tasks
 - 🔭 Financial Modeling Analytics @ PwC
 - 🔭 Data and Fintech Tutor
 - 🌱 Focused Learning on Deep Learning applications in financial realm
