@@ -16,8 +16,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 - 🔭 I’m currently tuning my Character Level Language model for transfer learning to classification tasks
-- 🔭 Financial Modeling Analytics @ PwC
-- 🔭 Senior Data and Fintech Tutor
+- 🔭 Data Scientist @ OppFi
+- 🔭 Incoming FinTech nstructor @ UCBerkley 
 - 🌱 Focused Learning on Deep Learning applications in financial realm
 - 🌱 Learning RUST programming language to prep. for Web 3.0
 - 📫 http://firobeid.pythonanywhere.com/
