@@ -22,3 +22,4 @@ Here are some ideas to get you started:
 - 🌱 Learning RUST programming language to prep. for Web 3.0
 - 📫 http://firobeid.pythonanywhere.com/
 - ⚡ Challenging intellectual capabilities is essential as working out!
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=firobeid&label=Profile%20views&color=0e75b6&style=flat" alt="firobeid" /> </p>
