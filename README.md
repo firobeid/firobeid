@@ -20,6 +20,15 @@ Here are some ideas to get you started:
 - 🔭 FinTech Instructor @ UC Berkley 
 - 🌱 Focused Learning on Deep Learning applications in financial realm
 - 🌱 Learning RUST programming language to prep. for Web 3.0
-- 📫 http://firobeid.pythonanywhere.com/
 - ⚡ Challenging intellectual capabilities is essential as working out!
+- 📫 http://firobeid.pythonanywhere.com/
+- 🧰 Data Science Developed Toolbox:
+
+  [UCBerkely Personal Lectures](https://firobeid.github.io/compose-plots/script.html)
+  
+  [Credit Risk Feature Profilling Data Science tool](https://firobeid.github.io/profilling/script.html)
+  
+  [ML Model monitoring](https://firobeid.github.io/ml-model-metrics/script.html)
+
+
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=firobeid&label=Profile%20views&color=0e75b6&style=flat" alt="firobeid" /> </p>
