@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 -->
 - 🔭 I’m currently tuning my Character Level Language model for transfer learning to classification tasks
 - 🔭 Data Scientist @ OppFi
-- 🔭 FinTech Instructor @ UC Berkley 
+- 🔭 AI Instructor @ ASU 
 - 🌱 Focused Learning on Deep Learning applications in financial realm
 - 🌱 Learning RUST programming language to prep. for Web 3.0
 - ⚡ Challenging intellectual capabilities is essential as working out!
