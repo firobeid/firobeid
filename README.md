@@ -15,8 +15,8 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-- 🔭 I’m currently tuning my Character Level Language model for transfer learning to classification tasks
-- 🔭 Data Scientist @ OppFi
+- 🔭 I developed my first language model for event driven trading in 2020 (The repo is pinned to my profile)
+- 🔭 Sr Data Scientist @ OppFi
 - 🔭 AI Instructor @ ASU 
 - 🌱 Focused Learning on Deep Learning applications in financial realm
 - 🌱 Learning RUST programming language to prep. for Web 3.0
@@ -29,6 +29,8 @@ Here are some ideas to get you started:
   [Credit Risk Feature Profilling Data Science tool](https://firobeid.github.io/profilling/script.html)
   
   [ML Model monitoring](https://firobeid.github.io/ml-model-metrics/script.html)
+
+  If these links dont work, please revert to my [HuggingFace Spaces](https://huggingface.co/firobeid)
 
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=firobeid&label=Profile%20views&color=0e75b6&style=flat" alt="firobeid" /> </p>
