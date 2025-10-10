@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 -->
 - 🔭 I developed my first language model for event driven trading in 2020 (The repo is pinned to my profile)
 - 🔭 Sr Data Scientist @ OppFi
-- 🔭 AI Instructor @ ASU 
+- 🔭 ML/AI Mentor @ UTAustin & Johns Hopkins 
 - 🌱 Focused Learning on Deep Learning applications in financial realm
 - 🌱 Learning RUST programming language to prep. for Web 3.0
 - ⚡ Challenging intellectual capabilities is essential as working out!
