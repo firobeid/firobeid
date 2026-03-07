@@ -1,6 +1,18 @@
-<iframe src="Firas_Obeid_Resume_v2.html" style="border:none; height: 500px; width: 100%;"></iframe>
+### Hi there 👋
 
+<!-- Profile Info -->
 
-## Original README Content
+- Accomplishments:
+  - Developed a comprehensive toolbox for data science projects
+  - Created a Credit Risk Feature Profiling tool utilized in finance
+  - Implemented ML Model monitoring to ensure efficacy and performance
+  - Designed a fallback system using HuggingFace Spaces
 
-Existing content of the README file goes here, keeping it intact below the iframe.
+## Data Science Developed Toolbox:
+
+- [UCBerkeley Personal Lectures](https://example.com)
+- [Credit Risk Feature Profiling Tool](https://example.com)
+- [ML Model Monitoring](https://example.com)
+- [HuggingFace Spaces Fallback](https://example.com)
+
+![Profile Views Badge](https://example.com/badge.png)
