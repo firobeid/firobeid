@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Firas Obeid — Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0A2D5E;
+    --navy-mid: #1a4a8a;
+    --gold: #9A6E00;
+    --gold-light: #C89B3C;
+    --dark: #1A1A2E;
+    --mid: #3D3D52;
+    --gray: #6B6B82;
+    --light: #F0F3FA;
+    --white: #FFFFFF;
+    --rule: #D0D8EC;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #E8EDF8;
+    color: var(--dark);
+    line-height: 1.6;
+    padding: 40px 20px;
+  }
+
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--white);
+    box-shadow: 0 8px 60px rgba(10,45,94,0.18);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Left accent bar */
+  .page::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 5px; height: 100%;
+    background: linear-gradient(180deg, var(--navy) 0%, var(--gold-light) 50%, var(--navy) 100%);
+  }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, var(--navy) 0%, #0E3D7A 60%, #0A2D5E 100%);
+    padding: 52px 56px 44px 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold-light), #E8C56A, var(--gold-light));
+  }
+
+  /* Subtle geometric pattern */
+  .header-bg {
+    position: absolute;
+    top: 0; right: 0;
+    width: 320px; height: 100%;
+    background: 
+      radial-gradient(ellipse at 80% 30%, rgba(200,155,60,0.08) 0%, transparent 60%),
+      repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 20px,
+        rgba(255,255,255,0.02) 20px,
+        rgba(255,255,255,0.02) 21px
+      );
+    pointer-events: none;
+  }
+
+  .name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+
+  .title-line {
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 22px;
+  }
+
+  .contact-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.72);
+    font-weight: 400;
+  }
+
+  .contact-bar a { color: rgba(255,255,255,0.72); text-decoration: none; }
+  .contact-bar span { color: rgba(200,155,60,0.6); }
+
+  /* Body */
+  .body { padding: 36px 56px 48px 60px; }
+
+  /* Section */
+  .section { margin-bottom: 32px; }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--navy);
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid var(--gold-light);
+    margin-bottom: 18px;
+  }
+
+  /* Profile */
+  .profile-text {
+    font-size: 14px;
+    color: var(--mid);
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  .profile-text strong { color: var(--dark); font-weight: 600; }
+
+  /* Competency grid */
+  .comp-grid { display: flex; flex-direction: column; gap: 8px; }
+  .comp-row { display: flex; gap: 8px; align-items: baseline; font-size: 13px; }
+  .comp-label { font-weight: 600; color: var(--dark); min-width: 200px; white-space: nowrap; }
+  .comp-items { color: var(--mid); line-height: 1.6; }
+
+  /* Role entry */
+  .role { margin-bottom: 24px; }
+
+  .role-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+    gap: 12px;
+  }
+
+  .role-title {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--dark);
+  }
+
+  .role-dates {
+    font-size: 12px;
+    color: var(--gray);
+    font-family: 'DM Mono', monospace;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+
+  .role-org {
+    font-size: 13px;
+    color: var(--navy-mid);
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
+
+  .role-note {
+    font-size: 12px;
+    color: var(--gray);
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+
+  .bullets { list-style: none; margin-top: 8px; }
+
+  .bullets li {
+    font-size: 13px;
+    color: var(--mid);
+    padding: 3px 0 3px 18px;
+    position: relative;
+    line-height: 1.65;
+    font-weight: 300;
+  }
+
+  .bullets li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 11px;
+    top: 5px;
+  }
+
+  /* Tags */
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .tag {
+    background: var(--light);
+    color: var(--navy);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 2px;
+    letter-spacing: 0.3px;
+  }
+
+  /* Publication */
+  .pub-item {
+    font-size: 13px;
+    color: var(--mid);
+    padding: 4px 0 4px 18px;
+    position: relative;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+  .pub-item::before {
+    content: '◆';
+    position: absolute; left: 0;
+    color: var(--gold);
+    font-size: 9px;
+    top: 7px;
+  }
+
+  /* Education */
+  .edu-block { margin-bottom: 16px; }
+  .edu-degree { font-size: 14px; font-weight: 600; color: var(--dark); }
+  .edu-school { font-size: 13px; color: var(--navy-mid); font-style: italic; }
+  .edu-note { font-size: 12px; color: var(--gray); margin-top: 2px; }
+
+  /* Footer */
+  .footer {
+    text-align: right;
+    font-size: 11.5px;
+    color: var(--gray);
+    font-style: italic;
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+  }
+
+  /* Divider between roles */
+  .role-divider {
+    border: none;
+    border-top: 1px dashed var(--rule);
+    margin: 18px 0;
+  }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .page { box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="header-bg"></div>
+    <div class="name">Firas Obeid</div>
+    <div class="title-line">Principal Data Scientist &nbsp;·&nbsp; Financial AI &amp; Credit Risk &nbsp;·&nbsp; Executive AI Educator</div>
+    <div class="contact-bar">
+      <span>Dallas, TX</span>
+      <span>·</span>
+      <span>214-586-1295</span>
+      <span>·</span>
+      <a href="mailto:feras.obeid@lau.edu">feras.obeid@lau.edu</a>
+      <span>·</span>
+      <a href="https://linkedin.com/in/feras-obeid">linkedin.com/in/feras-obeid</a>
+      <span>·</span>
+      <a href="https://github.com/firobeid">github.com/firobeid</a>
+      <span>·</span>
+      <a href="https://medium.com/@feras.obeid">medium.com/@feras.obeid</a>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <!-- Executive Profile -->
+    <div class="section">
+      <div class="section-title">Executive Profile</div>
+      <p class="profile-text">
+        Quantitative practitioner and AI educator with a rare trifecta: <strong>institutional capital markets experience</strong> as a registered FX dealer, <strong>production-grade fintech data science</strong> delivering credit models at scale, and <strong>proven executive AI education</strong> across Johns Hopkins, UT Austin McCombs, UC Berkeley, and ASU. At OppFi, leads end-to-end ML development for credit underwriting, collections, and acquisition — integrating alternative data sources and LLM pipelines into live lending portfolios. Simultaneously trains C-suite executives and senior professionals on AI strategy, agentic systems, and financial NLP. Currently architecting a Master's-level Financial NLP curriculum for a quantitative finance program (launch Fall 2026). Uniquely positioned where quantitative finance, production ML, and AI leadership education converge.
+      </p>
+    </div>
+
+    <!-- Core Competencies -->
+    <div class="section">
+      <div class="section-title">Core Competencies</div>
+      <div class="comp-grid">
+        <div class="comp-row">
+          <span class="comp-label">Quantitative Finance &amp; Risk</span>
+          <span class="comp-items">Credit Risk Modeling · Underwriting &amp; Collections · Derivatives Pricing &amp; Validation · FX &amp; Capital Markets · Portfolio Segmentation</span>
+        </div>
+        <div class="comp-row">
+          <span class="comp-label">AI &amp; Machine Learning</span>
+          <span class="comp-items">Generative AI &amp; LLMs · Financial NLP · Agentic AI (LangGraph) · Feature Engineering · Model Lifecycle &amp; Monitoring · Alternative Data Integration</span>
+        </div>
+        <div class="comp-row">
+          <span class="comp-label">Technology Stack</span>
+          <span class="comp-items">Python · PyTorch · TensorFlow · HuggingFace · SQL · Spark · AWS EC2 · Azure AI Studio · Refinitiv Eikon · Bloomberg Terminal · R · RUST (learning)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Professional Experience -->
+    <div class="section">
+      <div class="section-title">Professional Experience</div>
+
+      <div class="role">
+        <div class="role-header">
+          <span class="role-title">Senior Data Scientist</span>
+          <span class="role-dates">Jul 2022 – Present</span>
+        </div>
+        <div class="role-org">OppFi Inc. (NYSE: OPFI) — Dallas, TX (Remote)</div>
+        <div class="role-note">Fintech consumer lending platform. Served as primary data scientist across core credit model initiatives.</div>
+        <ul class="bullets">
+          <li>Owned end-to-end development and productionization of <strong>underwriting, collections, and direct-mail acquisition models</strong> for live credit portfolios.</li>
+          <li>Integrated <strong>alternative credit data and third-party vendor signals</strong> (transactional, behavioral, bureau) to improve predictive lift and borrower segmentation accuracy.</li>
+          <li>Pioneered privacy-safe adoption of <strong>open-source LLMs</strong> (LLaMA variants) for transaction categorization, replacing legacy rule-based systems and enriching model features at scale.</li>
+          <li>Built <strong>ML monitoring pipelines</strong>, model cards, and production alerting infrastructure in partnership with engineering and risk governance teams.</li>
+          <li>Governed data quality and compliance for third-party vendor ingestion across underwriting and lifecycle models.</li>
+        </ul>
+      </div>
+
+      <hr class="role-divider">
+
+      <div class="role">
+        <div class="role-header">
+          <span class="role-title">Financial Modeling Analytics Associate</span>
+          <span class="role-dates">Jul 2021 – Jun 2022</span>
+        </div>
+        <div class="role-org">PwC — US (Flexible)</div>
+        <ul class="bullets">
+          <li>Validated credit risk and derivatives pricing models for major bank and fintech clients against regulatory standards.</li>
+          <li>Automated XML-based financial data ingestion workflows for derivatives valuation audits, reducing manual processing time.</li>
+          <li>Provided quantitative model challenge on assumptions, documentation, and outcomes across credit and market risk frameworks.</li>
+        </ul>
+      </div>
+
+      <hr class="role-divider">
+
+      <div class="role">
+        <div class="role-header">
+          <span class="role-title">Quantitative Developer / Analyst (Contract)</span>
+          <span class="role-dates">Jul 2020 – Feb 2021</span>
+        </div>
+        <div class="role-org">AlgoPear — Dallas, TX</div>
+        <ul class="bullets">
+          <li>Designed and pre-trained a <strong>byte-level character language model</strong> from scratch on UTF-8 financial news headlines for multi-horizon stock price direction classification — built without pre-trained weights in 2020.</li>
+          <li>Delivered keynote on RNN-based financial NLP at UT Dallas Fintech Master's Program, influencing graduate-level curriculum.</li>
+        </ul>
+      </div>
+
+      <hr class="role-divider">
+
+      <div class="role">
+        <div class="role-header">
+          <span class="role-title">Treasury, FX &amp; Capital Markets Dealer</span>
+          <span class="role-dates">Mar 2015 – Jun 2018</span>
+        </div>
+        <div class="role-org">Middle East &amp; Africa Bank — Beirut, Lebanon</div>
+        <ul class="bullets">
+          <li><strong>Registered ACI Financial Markets Association dealer</strong>; executed FX spot, swaps, futures roll-overs, and overnight money-market trades generating ~$10K daily P&amp;L.</li>
+          <li>Managed dealing room and trading desk operations serving a 20-branch network when acting as Chief Dealer.</li>
+          <li>Deep institutional fluency in market microstructure, liquidity management, and interest rate risk — a direct foundation for current financial ML research.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- AI Education -->
+    <div class="section">
+      <div class="section-title">Executive AI Education &amp; Academic Appointments</div>
+
+      <div class="role">
+        <div class="role-header">
+          <span class="role-title">Applied Generative AI Mentor</span>
+          <span class="role-dates">Sep 2025 – Present</span>
+        </div>
+        <div class="role-org">Johns Hopkins University (via Great Learning)</div>
+        <ul class="bullets">
+          <li>Lead advanced AI instruction for <strong>C-suite executives and senior professionals</strong> in a professional certification program on Agentic AI systems.</li>
+          <li>Deliver live sessions covering LLMs, tool-use agent architectures, prompt engineering, and enterprise AI deployment strategy.</li>
+          <li>Advise on capstone AI transformation projects; bridge deep technical rigor with board-level strategic communication.</li>
+        </ul>
+      </div>
+
+      <hr class="role-divider">
+
+      <div class="role">
+        <div class="role-header">
+          <span class="role-title">AI / Machine Learning Mentor</span>
+          <span class="role-dates">Feb 2025 – Present</span>
+        </div>
+        <div class="role-org">Texas McCombs School of Business — UT Austin</div>
+        <ul class="bullets">
+          <li>Mentor postgraduate professionals in the Post Graduate Program in Artificial Intelligence &amp; Machine Learning.</li>
+          <li>Coach cohort members through production ML systems design, model deployment, and AI-for-business decision frameworks.</li>
+        </ul>
+      </div>
+
+      <hr class="role-divider">
+
+      <div class="role">
+        <div class="role-header">
+          <span class="role-title">Financial NLP Curriculum Architect</span>
+          <span class="role-dates">Mar 2025 – Present</span>
+        </div>
+        <div class="role-org">Confidential Quantitative Finance Program — Adjunct Launch: Fall 2026</div>
+        <ul class="bullets">
+          <li>Architecting a graduate-level Financial NLP course covering: financial sentiment modeling, transformer-based language models, LLM-driven market research agents, and quantitative textual alpha signal construction.</li>
+          <li>Developing proprietary lecture materials, datasets, and applied labs for institutional-level quant finance education.</li>
+        </ul>
+      </div>
+
+      <hr class="role-divider">
+
+      <div class="role">
+        <div class="role-header">
+          <span class="role-title">AI Bootcamp Instructor</span>
+          <span class="role-dates">Nov 2023 – Mar 2025</span>
+        </div>
+        <div class="role-org">Arizona State University</div>
+        <ul class="bullets">
+          <li>Led applied AI training for working professionals: LLM agents (LangGraph), video summarizers, EDA agents, and computer vision pipelines.</li>
+        </ul>
+      </div>
+
+      <hr class="role-divider">
+
+      <div class="role">
+        <div class="role-header">
+          <span class="role-title">FinTech Bootcamp Instructor</span>
+          <span class="role-dates">Sep 2022 – Nov 2023</span>
+        </div>
+        <div class="role-org">University of California, Berkeley</div>
+        <ul class="bullets">
+          <li>Taught financial machine learning, Python analytics, and quantitative modeling through applied fintech capstone projects.</li>
+        </ul>
+      </div>
+
+      <hr class="role-divider">
+
+      <div class="role">
+        <div class="role-header">
+          <span class="role-title">Senior Data Science &amp; FinTech Mentor</span>
+          <span class="role-dates">Jan 2021 – Present</span>
+        </div>
+        <div class="role-org">edX Inc.</div>
+        <ul class="bullets">
+          <li>Deliver 1-on-1 mentorship to professionals across the US and Australia in data science and fintech bootcamp programs.</li>
+          <li>Keynote speaker at <strong>edX Educator Conference 2023</strong> on personalized learning strategies; audience included educators from leading global universities and edtech platforms.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Research -->
+    <div class="section">
+      <div class="section-title">Independent Research &amp; Open-Source Projects</div>
+      <ul class="bullets">
+        <li><strong>Event-Driven Trading LM (2020, ongoing):</strong> Pre-trained byte-level LSTM on UTF-8 financial news for multi-horizon stock direction classification — built without pre-trained weights. Updated to 8-bit encoding for multilingual headlines. Fine-tuned Gemma 7B/2B on same dataset; benchmarked against compact custom architecture. <em>[GitHub: Language-Models-Research]</em></li>
+        <li><strong>Credit Risk Tooling:</strong> Open-source serverless browser tools (Pyodide) for credit feature profiling and ML model monitoring. Used in UC Berkeley instructional materials. <em>[firobeid.github.io]</em></li>
+        <li><strong>Financial Sentiment Web App:</strong> Full-stack Flask application with Twitter API integration for real-time sentiment analysis. Live at firobeid.pythonanywhere.com.</li>
+        <li><strong>HigherU Inc. (2023–2024):</strong> Co-founded AI startup automating course creation via domain-adaptive LLMs; built prompt flows and agent systems using Azure AI Studio.</li>
+        <li><strong>Credit Scoring Research:</strong> GBM, neural network, and logistic regression credit models with full NPV-based pricing per risk bucket. Presented at UT Dallas Financial Engineering Master's Program.</li>
+      </ul>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div class="edu-block">
+        <div class="edu-degree">M.S., Financial Engineering &amp; Risk Management</div>
+        <div class="edu-school">University of Texas at Dallas &nbsp;·&nbsp; December 2019</div>
+        <div class="edu-note">Distinction &nbsp;·&nbsp; GPA 3.87 &nbsp;·&nbsp; Focus: Financial NLP, ML for asset pricing, credit modeling</div>
+      </div>
+      <div class="edu-block">
+        <div class="edu-degree">B.S., Banking &amp; Finance</div>
+        <div class="edu-school">Lebanese American University, Beirut &nbsp;·&nbsp; February 2014</div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="section">
+      <div class="section-title">Certifications &amp; Memberships</div>
+      <div class="tags">
+        <span class="tag">ACI Financial Markets Association — Registered Dealer</span>
+        <span class="tag">Forex Trading &amp; Technical Analysis (Protrader)</span>
+        <span class="tag">Bloomberg Market Concepts</span>
+        <span class="tag">Refinitiv Eikon API Certified</span>
+      </div>
+    </div>
+
+    <!-- Publications -->
+    <div class="section">
+      <div class="section-title">Publications &amp; Talks</div>
+      <div class="pub-item">Boosting Models: Unwrapping the Basic Exact Greedy Algorithm — <em>Analytics Vidhya / Medium</em> (2020)</div>
+      <div class="pub-item">Methods to Interpreting Credit Model Predictions — <em>Analytics Vidhya / Medium</em> (2019)</div>
+      <div class="pub-item">Keynote: Engaging Tech Students Past Traditional Hands-On — <em>edX Educator Conference 2023</em></div>
+      <div class="pub-item">Keynote: RNN Applications in Financial NLP — <em>UT Dallas Fintech Master's Program</em> (2021)</div>
+    </div>
+
+    <div class="footer">U.S. Citizen &nbsp;·&nbsp; Open to Principal / Staff DS roles, advisory engagements &amp; adjunct appointments</div>
+
+  </div>
+</div>
+</body>
+</html>
